@@ -1,0 +1,15 @@
+[package]
+name = "grin_faucet"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+warp = { version = "0.3", features = ["tls"] }
+tokio = { version = "1", features = ["full"] }
+tokio-rustls = "0.22"  
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4"
+simplelog = "0.11"
+log = "0.4"
+sha2 = "0.10" 
+hex = "0.4.3"
